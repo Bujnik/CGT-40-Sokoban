@@ -12,6 +12,8 @@ The graphical interface will be implemented using Swing.
  
 
 __________________________________________________________
-My takeaways: <br>
+Task completed. My takeaways: <br>
 -> Working with Swing library <br>
--> Practice with MVC pattern
+-> Practice with MVC pattern <br>
+-> Practice with parsing text files <br>
+It was very fun task, only thing provided by CodeGym was the text file with levels. Game is fully functional.
