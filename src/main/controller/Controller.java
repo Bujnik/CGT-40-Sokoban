@@ -1,6 +1,7 @@
 package main.controller;
 
 import main.model.Direction;
+import main.model.GameObjects;
 import main.model.Model;
 import main.view.View;
 
@@ -12,11 +13,15 @@ public class Controller implements EventListener{
         view = new View(this);
         model = new Model();
         view.init();
+        model.restart();
     }
 
     public static void main(String[] args) {
-        Controller controller = new Controller();
+        new Controller();
+    }
 
+    public GameObjects getGameObjects(){
+        return model.getGameObjects();
     }
 
     @Override

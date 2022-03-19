@@ -2,6 +2,7 @@ package main.view;
 
 import main.controller.Controller;
 import main.controller.EventListener;
+import main.model.GameObjects;
 
 import javax.swing.*;
 import java.awt.*;
@@ -27,5 +28,13 @@ public class View extends JFrame {
         setLocationRelativeTo(null);
         setTitle("Sokoban");
         setVisible(true);
+    }
+
+    public void update(){
+        board.repaint();
+    }
+
+    public GameObjects getGameObjects(){
+        return controller.getGameObjects();
     }
 }
