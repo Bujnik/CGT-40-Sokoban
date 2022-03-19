@@ -105,13 +105,12 @@ public class Model {
         Set<StorageLocation> storageLocations = gameObjects.getStorageLocations();
         for (Box box : boxes) {
             //Check if box matches any storage location,
-            //if so - switch flag to true and remove storageLocation from the list)
+            //if so - switch flag to true and break current loop
             //else - switch flag to false
             for (StorageLocation storageLocation : storageLocations) {
                 if (box.getX() == storageLocation.getX()
                         && box.getY() == storageLocation.getY()) {
                     allBoxesDone = true;
-                    storageLocations.remove(storageLocation);
                     break;
                 }
                 else allBoxesDone = false;
