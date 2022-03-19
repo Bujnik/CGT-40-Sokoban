@@ -13,4 +13,5 @@ The graphical interface will be implemented using Swing.
 
 __________________________________________________________
 My takeaways: <br>
--> 
+-> Working with Swing library <br>
+-> Practice with MVC pattern
