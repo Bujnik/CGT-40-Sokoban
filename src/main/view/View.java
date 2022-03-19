@@ -1,6 +1,7 @@
 package main.view;
 
 import main.controller.Controller;
+import main.controller.EventListener;
 
 import javax.swing.*;
 import java.awt.*;
@@ -11,6 +12,10 @@ public class View extends JFrame {
 
     public View(Controller controller) {
         this.controller = controller;
+    }
+
+    public void setEventListener(EventListener eventListener) {
+        board.setEventListener(eventListener);
     }
 
     public void init() {
