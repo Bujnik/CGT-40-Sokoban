@@ -10,7 +10,7 @@ public class Model {
 
     private GameObjects gameObjects;
     private int currentLevel = 1;
-    private LevelLoader levelLoader = new LevelLoader(Paths.get("F:\\nauka\\CodeGymTasks\\4.JavaCollections\\src\\com\\codegym\\task\\task34\\task3410\\res\\levels.txt"));
+    private LevelLoader levelLoader = new LevelLoader(Paths.get("F:\\nauka\\Git projekty\\CGT-40-Sokoban\\src\\main\\res\\levels.txt"));
 
     public void setEventListener(EventListener eventListener) {
         this.eventListener = eventListener;
